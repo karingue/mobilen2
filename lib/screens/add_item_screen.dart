@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'wishlist_provider.dart';
+import 'package:mobilen2/providers/wishlist_provider.dart';
 
 class AddItemScreen extends StatelessWidget {
   final TextEditingController titleController = TextEditingController();
@@ -25,7 +25,7 @@ class AddItemScreen extends StatelessWidget {
                 decoration: const InputDecoration(labelText: 'Title'),
                 validator: (value) {
                   if (value == null || value.isEmpty) {
-                    return 'Por favor, insira um título.';
+                    return 'Por favor, insira um título.'; // Valida se o campo Title foi preenchido ao Adicionar um novo item na lista
                   }
                   return null;
                 },
@@ -33,10 +33,10 @@ class AddItemScreen extends StatelessWidget {
               const SizedBox(height: 20),
               TextFormField(
                 controller: descriptionController,
-                decoration: const InputDecoration(labelText: 'Description'),
+                decoration: const InputDecoration(labelText: 'Description'), 
                 validator: (value) {
                   if (value == null || value.isEmpty) {
-                    return 'Por favor, insira uma descrição.';
+                    return 'Por favor, insira uma descrição.'; // Valida se o campo Description foi preenchido ao Adicionar um novo item na lista
                   }
                   return null;
                 },

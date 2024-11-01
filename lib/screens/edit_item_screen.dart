@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'wishlist_provider.dart';
-import 'wishlist_item.dart';
+import 'package:mobilen2/providers/wishlist_provider.dart';
+import 'package:mobilen2/models/wishlist_item.dart';
 
 class EditItemScreen extends StatelessWidget {
   final WishlistItem item;
@@ -28,7 +28,7 @@ class EditItemScreen extends StatelessWidget {
                 decoration: const InputDecoration(labelText: 'Title'),
                 validator: (value) {
                   if (value == null || value.isEmpty) {
-                    return 'Por favor, insira um título.';
+                    return 'Por favor, insira um título.'; //Valida se o Campo Title foi preenchido ou não
                   }
                   return null;
                 },
@@ -39,7 +39,7 @@ class EditItemScreen extends StatelessWidget {
                 decoration: const InputDecoration(labelText: 'Description'),
                 validator: (value) {
                   if (value == null || value.isEmpty) {
-                    return 'Por favor, insira uma descrição.';
+                    return 'Por favor, insira uma descrição.'; //Valida se o campo Description foi preenchido ou não
                   }
                   return null;
                 },

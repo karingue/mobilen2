@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'wishlist_item.dart';
+import 'package:mobilen2/models/wishlist_item.dart';
 
 class WishlistProvider with ChangeNotifier {
   final FirebaseFirestore _db = FirebaseFirestore.instance;

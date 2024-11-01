@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'wishlist_provider.dart';
-import 'add_item_screen.dart';
-import 'edit_item_screen.dart';
+import 'package:mobilen2/providers/wishlist_provider.dart';
+import 'package:mobilen2/screens/add_item_screen.dart';
+import 'package:mobilen2/screens/edit_item_screen.dart';
 
 class WishlistScreen extends StatefulWidget {
   const WishlistScreen({super.key});
@@ -52,11 +52,11 @@ class _WishlistScreenState extends State<WishlistScreen>
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Wishlista_Gabriel', // Certifique-se de que o texto do título esteja aqui
+          'Wishlist_Gabriel', // Certifique-se de que o texto do título esteja aqui
           style: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.bold,
-            color: Color.fromARGB(255, 255, 255, 255),
+            color: Color.fromARGB(255, 15, 57, 143),
           ),
         ),
         centerTitle: true, // Centraliza o título na AppBar
